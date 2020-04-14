@@ -1,0 +1,4 @@
+Species,Movement_Year,Movement_Date,Number_of_Animals_Moved,Best_CPH_Dep,Location_Type_Dep,Best_Easting_Dep,Best_Northing_Dep,Best_CPH_Mkt,Best_Easting_Mkt,Best_Northing_Mkt,Best_CPH_Dest,Location_Type_Dest,Best_Easting_Dest,Best_Northing_Dest
+Sheep,2011,01/01/2011,35,xx/00/0000,Unknown,222832,587292,69/176/8004,224006,584920,xx/195/0009,Unknown,220750,582879
+Sheep,2011,15/01/2011,5,xx/195/0009,Unknown,220750,582879,69/176/8004,224006,584920,xx/195/0008,Unknown,221267,584516
+Sheep,2011,29/01/2011,5,xx/195/0008,Unknown,221267,584516,69/176/8004,224006,584920,xx/195/0004,Unknown,225566,581422
