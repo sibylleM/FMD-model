@@ -42,32 +42,25 @@ public class MainFrame extends JFrame {
 // DEFAULT INPUT FILES
 	
 //	static final String inputFolder = "input/cs/";
-//	static final String farmsFileName = "Ag_Census_2010_Misha_raw.csv";
+//	static final String farmsFileName = "Ag_Census_2010_raw.csv";
 //	static final String marketsFileName = "SAMU_Sheep_Market_2011.csv";
-//	static final String individualMovementsFileName = "SAMU_2010_11_Misha.csv";
+//	static final String individualMovementsFileName = "SAMU_2010_11.csv";
 //	static final String initillyaInfectedFarmsFileName = "indexCases2011.csv";
 	
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	static String inputFolder = "/Users/sibyllemohr/Google Drive/Misha_original_model/FMDModel/executables/input/dummy/";	
+	static String inputFolder = "/Users/sibyllemohr/original_model/FMDModel/executables/input/dummy/";	
 	static String farmsFileName = "premises.csv";
 	static String marketsFileName = "markets.csv";
 	static String individualMovementsFileName = "cattle_move11.csv";
 	
 
 //	static String marketsFileName = "../cs/SAMU_Sheep_Market_2011.csv";
-//	static String individualMovementsFileName = "../dummyForMisha.csv";
+//	static String individualMovementsFileName = "../dummy.csv";
 	
 	
-
-//	static String inputFolder = "input/dummy/Sibylle/";
-//	static String farmsFileName = "premises.csv";
-//	static String marketsFileName = "market.csv";
-//	static String individualMovementsFileName = "Data11Final.csv";
-	
-
 	// DATA
 	FarmsData farmsData;
 	MarketsData marketsData;
