@@ -51,10 +51,10 @@ public class MainFrame extends JFrame {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	static String inputFolder = "/Users/sibyllemohr/original_model/FMDModel/executables/input/dummy/";	
+	static String inputFolder = "/Users/sibyllemohr/data/RAMP/dummy_input/";	
 	static String farmsFileName = "premises.csv";
 	static String marketsFileName = "markets.csv";
-	static String individualMovementsFileName = "cattle_move11.csv";
+	static String individualMovementsFileName = "movements.csv";
 	
 
 //	static String marketsFileName = "../cs/SAMU_Sheep_Market_2011.csv";
