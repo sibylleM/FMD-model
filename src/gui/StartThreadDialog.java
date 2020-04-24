@@ -108,7 +108,7 @@ public class StartThreadDialog extends JFrame {
 	//            "31/10/2010"};
 	
 	static final String[] startDates = { 
-	"01/2010", 
+/*	"01/2010", 
 	"02/2010",
 	"03/2010",
 	"04/2010",
@@ -119,7 +119,7 @@ public class StartThreadDialog extends JFrame {
 	"09/2010",
 	"10/2010",
 	"11/2010",
-	"12/2010",
+	"12/2010", */
 	"01/2011", 
 	"02/2011",
 	"03/2011",
