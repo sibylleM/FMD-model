@@ -41,33 +41,21 @@ public class MainFrame extends JFrame {
 
 // DEFAULT INPUT FILES
 	
-//	static final String inputFolder = "input/cs/";
-//	static final String farmsFileName = "Ag_Census_2010_Misha_raw.csv";
-//	static final String marketsFileName = "SAMU_Sheep_Market_2011.csv";
-//	static final String individualMovementsFileName = "SAMU_2010_11_Misha.csv";
-//	static final String initillyaInfectedFarmsFileName = "indexCases2011.csv";
 	
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	static String inputFolder = "/Users/sibyllemohr/Google Drive/Misha_original_model/FMDModel/executables/input/dummy/";	
+	static String inputFolder = "/Users/sibyllemohr/data/RAMP/dummy_input/";	
 	static String farmsFileName = "premises.csv";
 	static String marketsFileName = "markets.csv";
-	static String individualMovementsFileName = "cattle_move11.csv";
-	
+	static String individualMovementsFileName = "movements.csv";
+//	static final String initillyaInfectedFarmsFileName = "indexCases2011.csv";
 
 //	static String marketsFileName = "../cs/SAMU_Sheep_Market_2011.csv";
-//	static String individualMovementsFileName = "../dummyForMisha.csv";
+//	static String individualMovementsFileName = "../dummy.csv";
 	
 	
-
-//	static String inputFolder = "input/dummy/Sibylle/";
-//	static String farmsFileName = "premises.csv";
-//	static String marketsFileName = "market.csv";
-//	static String individualMovementsFileName = "Data11Final.csv";
-	
-
 	// DATA
 	FarmsData farmsData;
 	MarketsData marketsData;
@@ -522,7 +510,7 @@ public class MainFrame extends JFrame {
 				
 			}
 		});
-	    diseaseSpecificPanel.add(new JLabel("Incubation preiod:"));
+	    diseaseSpecificPanel.add(new JLabel("Incubation period:"));
 	    diseaseSpecificPanel.add(latentPeriodComboBox);
 	    
 	    options = new Integer[] { 3 };
@@ -647,7 +635,7 @@ public class MainFrame extends JFrame {
 	    controlSpecificPanel.add(movementBanDelayComboBox);
 	    
 
-	    options = new Integer[] { 13 }; // Sibylle: no standstill
+	    options = new Integer[] { 13 }; //standstill
 	    JComboBox<Integer> movementRestrictionsComboBox = new JComboBox<Integer>(options);
 	    movementRestrictionsComboBox.setEditable(true);
 	    movementRestrictionsComboBox.setSelectedIndex(0);
@@ -662,7 +650,7 @@ public class MainFrame extends JFrame {
 	    controlSpecificPanel.add(new JLabel("Standstill period:"));
 	    controlSpecificPanel.add(movementRestrictionsComboBox);
 	    
-	    options = new Integer[] { 21 };
+	    options = new Integer[] { 21 }; // contact tracing depth
 	    JComboBox<Integer> contactTracingDepthComboBox = new JComboBox<Integer>(options);
 	    contactTracingDepthComboBox.setEditable(true);
 	    contactTracingDepthComboBox.setSelectedIndex(0);

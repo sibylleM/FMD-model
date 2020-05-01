@@ -119,7 +119,7 @@ public class EpidemicModellingThread extends SwingWorker<Integer, Integer> {
             publish((i + 1) * 100 / repeats);
             setProgress((i + 1) * 100 / repeats);
 			
-            // input parameters Sibylle: commented that out
+            // input parameters 
            resultsFile.getWriter().format("%s,%s,%s,%d,%d,%f,%f,%f,%f,%d,%d,%d,%d,%d,%d,%d,%d,%d,%f,",
 										   new SimpleDateFormat("dd-MM-yyyy").format(new Date()),
 										   new SimpleDateFormat("HH:mm").format(new Date()),
