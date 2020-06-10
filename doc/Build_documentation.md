@@ -249,17 +249,17 @@ generated the age will be in the range of 80 – 99, a<sub>min</sub>,
 a<sub>max</sub> as the random number is the in range 0.8 \<= x \< 1. The
 final age is calculated using
 
-\[age = \left( a_{\text{max}} - a_{\min} \right)\left( \frac{n - x_{\min}}{x_{\max} - x_{\min}} \right) + a_{\min}\]
+![](eq1.gif)
 
 Equation how age is calculated
 
 So, for our example
 
-\[age = \left( 100 - 80 \right)\left( \frac{0.85 - 0.8}{1 - 0.8} \right) + 80\]
+![](eq2.gif)
 
-\[= 20*\frac{1}{4} + 80\]
+![](eq3.gif)
 
-\[= 85\ \]
+![](eq4.gif)
 
 #### Gender:
 
@@ -268,10 +268,7 @@ gender balance of 0.99 means there are 99 men for every 100 women. This
 is the convention used in census data. The gender is calculated using
 equation 2, where n is a random number and g is the gender balance
 
-\[gender = \ \left\{ \begin{matrix}
-n > \frac{g}{2}\overset{\text{  }}{\rightarrow}\text{FEMALE} \\
-n \leq \frac{g}{2}\overset{\text{  }}{\rightarrow}\text{MALE} \\
-\end{matrix} \right.\ \]
+![](eq5.gif)
 
 Equation how gender is calculated
 
@@ -424,7 +421,7 @@ PersonA is the more severe case; the least severe case is personB. A
 dangerous mix is when personA is infectious (E2, I, IA) and personB is
 susceptible. If this is the case, the following test is conducted:
 
-\[n\  < \frac{\text{weight}}{\text{exposureTuning}}\overset{\text{ }}{\rightarrow}\text{EXPOSED}\]
+![](eq6.gif)
 
 Where n is a random number.
 
@@ -438,18 +435,11 @@ During the run to Steady-state routine, shown in Figure 13, updates the
 population statuses until the existing active cases are resolved, i.e.
 all active cases resolve in recovery or death. The exit condition is
 
-\[0 = \sum_{}^{}\begin{matrix}
-\text{exposed} \\
-\begin{matrix}
-exposed\_ 2 \\
-\text{infected} \\
-infected\_ symp \\
-\end{matrix} \\
-\end{matrix}\]
+![](eq7.gif)
 
 ![](image13.png)
 
-Figure The run to completion algorithm
+Figure 13. The run to completion algorithm
 
 ### Update population
 
@@ -470,17 +460,11 @@ the chosen random number distribution. Exposed<sub>2</sub> and
 Infected<sub>sump</sub> have two options, denoted by the red box. These
 are chosen by random number, n:
 
-\[\begin{matrix}
-n > health \rightarrow INFECTED\ \ \ \ \ \ \ \  \\
-n \leq health \rightarrow \text{INFECTED}_{\text{symp}} \\
-\end{matrix}\]
+![](eq8.gif)
 
 Likewise, the outcome of an Infected<sub>sump</sub> is determined by:
 
-\[\begin{matrix}
-n > health \rightarrow RECOVERED\ \ \ \ \ \ \ \  \\
-n \leq health \rightarrow DEAD\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \\
-\end{matrix}\]
+![](eq9.gif)
 
 #### Alert Status
 
