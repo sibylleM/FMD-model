@@ -15,7 +15,7 @@ This model using a
 SE<sub>1</sub>E<sub>2</sub>I<sub>a</sub>I<sub>s</sub>RD model with the
 following transitions allowed:
 
-![](media/image1.png)
+![](image1.png)
 
 Figure 1. The compartment model
 
@@ -53,7 +53,7 @@ filtering the contacts should a node be alerted. NB. The time and nodes
 in the CSV file are indexed from 1, the code subtracts 1 so they are
 zero indexed.
 
-![](media/image2.png)
+![](image2.png)
 
 Figure 2. Contacts.csv example
 
@@ -82,7 +82,7 @@ from outside the network interacting. This is the probability per
 person, per timestep. So, 0.05 is 5 people in a population of 100 per
 day. This value is likely to be much smaller than 0.05.
 
-![](media/image3.png)
+![](image3.png)
 
 Figure 3. The diseaseSettings.json file
 
@@ -105,7 +105,7 @@ Gender balance: this is the ratio of men:women, so there are 99 men for
 every 100 women in this example. This data has been taken from Index
 Mundi.
 
-![](media/image4.png)
+![](image4.png)
 
 Figure 4. The population input
 
@@ -133,7 +133,7 @@ occurring.
 
 Contacts file: points to the CSV file being used in this run.
 
-![](media/image5.png)
+![](image5.png)
 
 Figure 5. the run settings file
 
@@ -141,7 +141,7 @@ Figure 5. the run settings file
 
 Following the schema described in Figure 1
 
-![](media/image1.png)
+![](image1.png)
 
 the status of the virus infections in the code is referred to by an
 enumeration called Virus Status, which has the options:
@@ -175,7 +175,7 @@ enumeration:
 
 Where the valid transitions are shown in Figure 6.
 
-![](media/image6.png)
+![](image6.png)
 
 Figure 6. The alert status transitions
 
@@ -184,7 +184,7 @@ Figure 6. The alert status transitions
 The structure of the model follows the maven/gradle standard project
 layout as shown in Figure 7.
 
-![](media/image7.png)
+![](image7.png)
 
 Figure 7. Project and Package Layout
 
@@ -194,7 +194,7 @@ resources required by the model, it calls ContactRunner.java, which is
 where the main execution and calculation occurs. This is shown in Figure
 8.
 
-![](media/image8.png)
+![](image8.png)
 
 Figure 8. The top-level execution structure
 
@@ -318,7 +318,7 @@ The compartment data is returned from the outbreak.propagate() method.
 This is sent to a writer which outputs a CSV file. An example is shown
 in Figure 9.
 
-![](media/image9.png)
+![](image9.png)
 
 Figure 9. Example of CSV output
 
@@ -355,7 +355,7 @@ If the time limit is less than or equal to the max contact time, a
 warning is logged that not all contact data is used and the steady state
 flag will be disabled.
 
-![](media/image10.png)
+![](image10.png)
 
 Figure 10. The propagation routine
 
@@ -380,7 +380,7 @@ the set of infections caused by the preceding infection. This can be one
 or many. The following lines then show the infections caused by that
 set. If the chain ends, it means the final link didn’t infect anyone.
 
-![](media/image11.png)
+![](image11.png)
 
 Figure 11. Infection map example
 
@@ -428,7 +428,7 @@ susceptible. If this is the case, the following test is conducted:
 
 Where n is a random number.
 
-![](media/image12.png)
+![](image12.png)
 
 Figure 12. The logic flow for reviewing contact data
 
@@ -447,7 +447,7 @@ infected\_ symp \\
 \end{matrix} \\
 \end{matrix}\]
 
-![](media/image13.png)
+![](image13.png)
 
 Figure The run to completion algorithm
 
@@ -457,7 +457,7 @@ The update population algorithm, shown in Figure 14, is run as part of
 Run Contact Data and Steady State. Each case has fields containing the
 next time their statuses change.
 
-![](media/image14.png)
+![](image14.png)
 
 Figure 14. The update population algorithm
 
